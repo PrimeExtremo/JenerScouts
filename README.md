@@ -1,62 +1,109 @@
-# JenerScouts: deal finder and security news for Windows
+<h1 align="center">JenerScouts</h1>
 
-**A free Windows app that scouts the internet for you: great deals and price mistakes the moment they drop, plus security news explained in plain English so anyone can stay safe online.**
+<h3 align="center">Security news you can actually understand.</h3>
 
-[**⬇ Download the latest version for Windows**](https://github.com/PrimeExtremo/jenerdev-app/releases/latest) · [Website](https://jener.dev/jenerscouts)
+<p align="center">
+  A free desktop app that tells you what's happening in security today, whether it affects you,<br>
+  and exactly what to do about it. With quick safety checks, and deals if you want them.
+</p>
 
-No account. No ads in the app. Everything runs on your PC.
+<p align="center">
+  <a href="https://apps.microsoft.com/detail/9NQFX4G5VV4V"><img src="https://img.shields.io/badge/Microsoft%20Store-Get%20it-1F1913?style=flat-square&logo=microsoft&logoColor=F6F1E7" alt="Get it from the Microsoft Store"></a>
+  <a href="https://github.com/PrimeExtremo/JenerScouts/releases/latest"><img src="https://img.shields.io/github/v/release/PrimeExtremo/JenerScouts?style=flat-square&color=C4512B&label=latest" alt="Latest release"></a>
+  <img src="https://img.shields.io/badge/platform-Windows%20%7C%20Linux-1F1913?style=flat-square" alt="Windows and Linux">
+  <img src="https://img.shields.io/badge/price-free-1F1913?style=flat-square" alt="Free">
+</p>
+
+<p align="center">
+  <a href="#download">Download</a> ·
+  <a href="#what-you-get">Features</a> ·
+  <a href="#how-the-score-works">The score</a> ·
+  <a href="#privacy">Privacy</a> ·
+  <a href="https://jener.dev/jenerscouts">jener.dev</a>
+</p>
+
+<p align="center">
+  <img src="docs/home.jpg" width="860" alt="JenerScouts home screen: today's threat level, the top story and quick checks">
+</p>
 
 ---
 
-## What it does
+## Download
 
-### 🏷️ Deals and price mistakes
-- Live deals from community deal sites like Slickdeals, DealNews and Ben's Bargains, checked every 30 seconds.
-- ⚡ **Price mistakes**: items accidentally listed far below their real price, flagged so you can grab them before they're fixed.
-- Filters for Hot deals, Amazon, Food, Penny items and Freebies.
-- Desktop alerts for the deals you care about, even when the window is closed (it waits in the tray).
+| Platform | Get it | Updates |
+|---|---|---|
+| **Windows** (recommended) | [Microsoft Store](https://apps.microsoft.com/detail/9NQFX4G5VV4V) | Automatic, through the Store |
+| **Windows** (installer) | [`JenerScouts-Setup-x.y.z.exe`](https://github.com/PrimeExtremo/JenerScouts/releases/latest) | Automatic, signature-checked |
+| **Linux** (any distro) | [`.AppImage`](https://github.com/PrimeExtremo/JenerScouts/releases/latest) | Download new versions from Releases |
+| **Debian / Ubuntu** | [`.deb`](https://github.com/PrimeExtremo/JenerScouts/releases/latest) | Download new versions from Releases |
 
-### 🛡️ Security news anyone can understand
-- The latest stories from trusted sources (The Hacker News, BleepingComputer, Krebs on Security, CISA and more).
-- Every story says **what it means for you** and **what to do** in plain English, no tech background needed.
-- A **0 to 10 score** on every story, so you can see at a glance what matters:
+No account, no sign-up.
 
-  | Score | Meaning |
-  |---|---|
-  | 🟩 0–3.9 Low | Good to know, nothing to do |
-  | 🟨 4–6.9 Medium | Worth a look if you use the product mentioned |
-  | 🟧 7–8.9 High | Update or follow the advice soon |
-  | 🟥 9–10 Critical | Act now |
+<details>
+<summary>Install notes</summary>
 
-  When a story names a **CVE** (the official ID for a security hole), the score is its official **CVSS** rating from the U.S. National Vulnerability Database. If CISA says attackers are using it right now, it counts as at least 9. Other stories get an estimate based on the kind of story, clearly marked "est."
-- Filters for Important stories, Scams, Data leaks and Updates.
+- **Windows installer:** SmartScreen may show "Windows protected your PC" because the installer uses JenerDev's own certificate. Click **More info → Run anyway**. The Store version doesn't show this.
+- **AppImage:** `chmod +x JenerScouts-*.AppImage`, then double-click it or run it from a terminal.
+- **.deb:** `sudo apt install ./JenerScouts-*-linux-amd64.deb`, then open **JenerScouts** from your apps or run `jenerscouts`.
+- **Tray:** closing the window keeps JenerScouts in the tray so alerts still arrive. Quit from the tray menu. On GNOME, tray icons need the AppIndicator extension (Ubuntu includes it).
 
-### 🧰 Safety tools
-- **Password check**: how strong a password is and whether it appeared in a known data leak (via Have I Been Pwned; your password never leaves your PC).
-- **Link checker**: paste a link from an email or text and see the common scam tricks it uses (look-alike names, fake "login" addresses, short links, risky endings and more).
-- **CVE lookup**: type a CVE number and get its 0–10 score explained, whether it's being used in attacks, and what to do.
-- **Exploited now**: security holes criminals are using right now, from CISA's Known Exploited Vulnerabilities list.
-- Extra tools for techies: hash, encode/decode, JWT viewer, Unix time.
+</details>
 
-## Install
+## What you get
 
-1. Download **`JenerScouts-Setup-x.y.z.exe`** from the [latest release](https://github.com/PrimeExtremo/jenerdev-app/releases/latest).
-2. Run it. Windows SmartScreen may say "Windows protected your PC" because the app isn't code-signed yet: click **More info → Run anyway**.
-3. JenerScouts updates itself automatically.
+### Know what matters today
+The home screen shows today's threat level at a glance: how many security holes criminals are using right now, the top story with a clear next step, and quick checks one click away.
 
-Closing the window keeps JenerScouts in the system tray so alerts still arrive. To fully quit, right-click the tray icon → **Quit**.
+### Security news in plain English
+<img src="docs/news.jpg" width="100%" alt="Security news list with 0 to 10 scores">
+
+Stories from The Hacker News, BleepingComputer, Krebs on Security, SecurityWeek, CISA and more. Every story says **what happened**, **whether it affects you** and **what to do**, with a score from 0 to 10. Filter by Important, Scams, Data leaks or Updates. Stories that name a CVE show it as a chip you can open for the details.
+
+### Quick safety checks
+<img src="docs/tools.jpg" width="100%" alt="Security tools: password check, link checker, under attack now, CVE lookup">
+
+- **Password check:** how strong a password is and whether it has shown up in a data leak. The password never leaves your PC.
+- **Link checker:** paste a link from a text or email and see the scam tricks it uses: look-alike names, fake login pages, short links, risky endings.
+- **Under attack now:** the security holes criminals are using today, from CISA's Known Exploited Vulnerabilities list.
+- **CVE lookup:** any CVE number, explained in plain words with what to do.
+- **For techies:** hash, encode/decode, JWT viewer and Unix time.
+
+### A calmer way to read
+Stories open in a built-in reader that blocks ads, trackers and pop-ups, and your mouse's back and forward buttons work across the app and the reader. Deal links open in your normal browser.
+
+### Deals, only if you want them
+<img src="docs/deals.jpg" width="100%" alt="Live deals with prices and discounts">
+
+Turn on live deals from Slickdeals, DealNews and Ben's Bargains: price mistakes, freebies, Amazon, food and penny deals, with desktop alerts for the ones you care about. Or leave them off and keep JenerScouts about security.
+
+## How the score works
+
+| Score | Meaning |
+|---|---|
+| 0–3.9 | Good to know, nothing to do |
+| 4–6.9 | Worth a look if you use the product |
+| 7–8.9 | Update or follow the advice soon |
+| 9–10 | Act now |
+
+When a story names a **CVE**, the score is its official **CVSS** rating from the U.S. National Vulnerability Database. If CISA lists it as actively exploited, it counts as at least 9. Other stories get an estimate based on the kind of story, marked "est."
 
 ## Privacy
 
-- No account, no tracking, no analytics.
-- Your settings and saved deals stay on your PC in `%APPDATA%\JenerDev`.
-- The app only talks to the public deal and news sites it reads, NVD/CISA for security scores, Have I Been Pwned for the password check (only the first 5 characters of a hash are sent), and GitHub for updates.
-- Some Amazon links include an affiliate tag (#ad), which supports the app at no cost to you.
+- No account, no analytics, no tracking.
+- Settings, saved links and cached news stay on your device (`%APPDATA%\JenerScouts` on Windows, `~/.config/JenerScouts` on Linux).
+- The app only contacts the public news and deal sites it reads, NVD and CISA for security data, Have I Been Pwned for the password check (only the first 5 characters of a hash are sent), public ad-block lists for the reader, and GitHub or the Microsoft Store for updates.
+- Some Amazon deal links include an affiliate tag, which supports the app at no cost to you.
+
+Full details: [Privacy policy](https://jener.dev/jenerscouts/privacy) · [Terms of use](https://jener.dev/jenerscouts/terms)
+
+## Built with
+
+Electron 44 and plain JavaScript. The in-app reader runs in its own sandboxed view with no access to the app, the Windows installer only accepts updates signed by JenerDev's certificate, and the packaged app is hardened against tampering.
 
 ## Formerly JenerDev
 
-JenerScouts was called **JenerDev** up to version 1.0.6. If you have JenerDev installed, it updates to JenerScouts on its own and keeps your settings.
+JenerScouts was called **JenerDev** up to version 1.0.6. Older installs update on their own and keep their settings.
 
 ---
 
-Made by [Jener](https://jener.dev).
+<p align="center"><sub>© JenerDev · <a href="https://jener.dev">jener.dev</a> · Questions or feedback: <a href="mailto:hello@jener.dev">hello@jener.dev</a></sub></p>
