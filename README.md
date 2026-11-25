@@ -15,11 +15,18 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/PrimeExtremo/JenerScouts/raw/main/docs/trailer.mp4">Trailer</a> ·
   <a href="#download">Download</a> ·
   <a href="#what-you-get">Features</a> ·
   <a href="#how-the-score-works">The score</a> ·
   <a href="#privacy">Privacy</a> ·
   <a href="https://jener.dev/jenerscouts">jener.dev</a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/PrimeExtremo/JenerScouts/raw/main/docs/trailer.mp4"><img src="docs/trailer-preview.gif" width="860" alt="JenerScouts trailer preview: hacks, leaks, scams, fake texts. Does any of it affect you?"></a>
+  <br>
+  <sub><a href="https://github.com/PrimeExtremo/JenerScouts/raw/main/docs/trailer.mp4"><b>▶ Watch the full trailer</b></a> (35 s, with sound) · Music: “Circe” by Zak Azoury</sub>
 </p>
 
 <p align="center">
